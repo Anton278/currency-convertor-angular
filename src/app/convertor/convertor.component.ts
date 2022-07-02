@@ -17,14 +17,6 @@ export class ConvertorComponent {
   currency1 = 'UAH';
   currency2 = 'UAH';
 
-  // calcRateProps: ICalcRateProps = {
-  //   from: this.currency1,
-  //   to: this.currency2,
-  //   count: Number(this.input1.value),
-  //   USDUAH: this.USDUAH,
-  //   EURUAH: this.EURUAH,
-  // };
-
   select1Handler(e: any) {
     this.currency1 = e.target.value;
     const props = {
