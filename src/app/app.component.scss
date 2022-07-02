@@ -1,0 +1,16 @@
+.header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  .header__col {
+    display: flex;
+    align-items: center;
+    &:first-of-type {
+      margin-right: 1rem;
+    }
+  }
+}
+.hr {
+  height: 1px;
+  background-color: #ccc;
+}

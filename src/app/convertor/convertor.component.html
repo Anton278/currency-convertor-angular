@@ -1,0 +1,26 @@
+<div class="convertor">
+  <div class="convertor__col">
+    <input
+      type="number"
+      (input)="input1Handler($event)"
+      [formControl]="input1"
+    />
+    <select (change)="select1Handler($event)">
+      <option value="UAH">UAH</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+    </select>
+  </div>
+  <div class="convertor__col">
+    <input
+      type="number"
+      (input)="input2Handler($event)"
+      [formControl]="input2"
+    />
+    <select (change)="select2Handler($event)">
+      <option value="UAH">UAH</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+    </select>
+  </div>
+</div>
