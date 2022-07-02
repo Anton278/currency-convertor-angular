@@ -17,10 +17,10 @@ export class AppComponent implements OnInit {
     this.RatesService.getExchangeRates().subscribe((currencies) => {
       currencies.forEach((currency) => {
         if (currency.cc === 'USD' && currency.r030 === 840) {
-          this.USDUAH = currency.rate;
+          this.USDUAH = Math.round(currency.rate * 100) / 100;
         }
         if (currency.cc === 'EUR' && currency.r030 === 978) {
-          this.EURUAH = currency.rate;
+          this.EURUAH = Math.round(currency.rate * 100) / 100;
         }
       });
     });
